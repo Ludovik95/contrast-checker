@@ -1,14 +1,46 @@
 @import "./blueprint";
 
-.app-grid {
-  display: grid;
-  grid-gap: 4rem;
+.app-flex-row-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 4rem;
+  row-gap: 0;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: flex-start;
 }
 
-@media (min-width: 50em) {
-  .app-grid {
-    grid-template-columns: auto auto auto;
-  }
+.app-flex-item-form {
+  flex: 0 0 213px;
+  @media (max-width: 40em) {
+      flex: 0 0 180px;
+    }
+}
+
+.app-flex-object-alpha {
+display: flex;
+gap:1em;
+flex: 0 0 280px;
+align-items: flex-end;
+}
+
+.disabled-input {
+  pointer-events: none;
+}
+
+.app-flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.app-flex-item {
+  flex: 1 1 200px;
 }
 
 .app-input-page {
